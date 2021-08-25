@@ -1,0 +1,108 @@
+              /* STYLE SHEET FOR THE LOG IN FORM */
+/*---------written by Lee 254-----------*/
+
+/*------Customizing the fonts of the whole document8--------*/
+/*center the paragraphs*/
+body {font-family: Arial, Helvetica, sans-serif;
+     background-color: #B4BEC1;
+    text-align: center;
+     }
+     
+     
+/*----------we outline the form formatting so that it can be identified on the page where it extends to ----*/
+
+form { 
+       border: 1px solid lightgrey;
+       max-width: 600px;
+       margin:auto;
+       border-radius: 5px;
+       padding:3px;
+      }
+
+
+/*-------Defining the image ------------*/
+img { height: 100px;
+      width:auto;
+           
+    }
+        
+/* styling inputs */
+input{   box-sizing:border-box;
+         background-color:white;
+         width:90%;
+         border:1px solid lightgrey;
+         border-radius:20px;
+         text-align:center;
+         padding:10px;
+         color:black;
+         display:inline-block;
+         margin:10px;
+         font-size: 18px;
+      }
+     
+/* input when active */
+ input:focus{
+             border:1px solid beige;
+             color:#12128C;
+             box-shadow: 0 5px 5px rgba(0,0,0,0.15), 0 5px 5px rgba(0,0,0,0.15) ;
+             font-weight: bold;
+             transition: ease-in-out 0.3s;
+             background-color: #D9E2E1;
+            }
+            
+/*   text for follow after the pic customization   */
+.sign-in {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*   horizontal rule  */
+hr { border:1px solid grey;
+     width:30%;
+   }
+/* division containing all contents of the form */
+.div-cont { background-color:lightgrey;
+            padding:10px;
+          }
+/* buttons */
+button { height: 40px;
+         padding:5px;
+         width:40%;
+         border-radius: 20px;
+         margin-top: 30px;
+         font-size: 18px;
+         background-color: #37896E;
+         border:none;
+         font-weight: bold;
+       }
+button:hover { cursor: pointer;
+               opacity: 0.7;
+               color:;
+               transition: ease-in-out 0.3s;
+               
+             }
+.cancel { 
+          width:40%;
+          position:relative;
+          align-self:auto;
+          background-color: #AF4444;
+          margin-left: 20px;}
+          a { text-decoration: none;}
+          
+/*------making it responsive to narrow screen devices----*/
+@media screen and (max-width: 450px) {
+    button{  width:90%;
+             margin-top:10px;
+            font-size: 17px;
+          }
+        
+    img{ height:80px;}
+    
+    input{ font-size: 17px; }
+    
+    .cancel{ width:90%;
+    margin-top:10px;
+    margin-left: 0px;}
+    
+    .sign-in{ font-size: 19px;}
+    }
